@@ -1,15 +1,22 @@
+# ignore build files
 build32/
 build64/
+
+# ignore debian files created by build process
 
 debian/files
 debian/voglperf.debhelper.log
 debian/voglperf.substvars
 debian/voglperf/
 
+# ignore the bin files created by build process
+
 bin/libvoglperf32.so
 bin/libvoglperf64.so
 bin/voglperfrun32
 bin/voglperfrun64
+
+# ignore any qt files
 
 qtcreator/CMakeCache.txt
 qtcreator/CMakeFiles/
