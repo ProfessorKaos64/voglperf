@@ -1,4 +1,10 @@
-*~
+build32/
+build64/
+
+debian/files
+debian/voglperf.debhelper.log
+debian/voglperf.substvars
+debian/voglperf/
 
 bin/libvoglperf32.so
 bin/libvoglperf64.so
