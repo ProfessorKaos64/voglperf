@@ -3,7 +3,9 @@ Section: utils
 Priority: extra
 Maintainer: SteamOS-Tools Signing Key <mdeguzis@gmail.com>
 Build-Depends: debhelper (>= 9),
- steamos-dev,
+ gdbserver,
+ nfs-common,
+ openssh-server,
  ca-certificates,
  cmake,
  g++,
@@ -13,7 +15,9 @@ Build-Depends: debhelper (>= 9),
  mesa-common-dev,
  libedit-dev,
  libtinfo-dev,
- libtinfo-dev:i386
+ libtinfo-dev:i386,
+ ${shlibs:Depends}, 
+ ${misc:Depends}
 Standards-Version: 3.9.5
 Homepage: http://github.com/ProfessorKaos64/voglperf
 Vcs-Git: git://github.com/ProfessorKaos64/voglperf
