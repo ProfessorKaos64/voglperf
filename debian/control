@@ -26,15 +26,16 @@ Build-Depends: debhelper (>= 9),
  libgcc-dev,
  libstdc++-dev,
  libstdc++-dev:i386,
- ${shlibs:Depends}, 
- ${misc:Depends}
-Standards-Version: 3.9.5
+Standards-Version: 3.9.7
 Homepage: http://github.com/ProfessorKaos64/voglperf
 Vcs-Git: git://github.com/ProfessorKaos64/voglperf
 Vcs-Browser: http://github.com/ProfessorKaos64/voglperf
 
-Package: voglperf
-Architecture: all
-Depends: curl
-Description: voglperf Benchmarking tool for Linux OpenGL game.
+Package: voglperf 
+Architecture: all 
+Depends: ${shlibs:Depends},
+ ${misc:Depends},
+ curl 
+Description: voglperf 
+Benchmarking tool for Linux OpenGL game.
  Spews frame information every second.
