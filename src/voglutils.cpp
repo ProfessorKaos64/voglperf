@@ -431,7 +431,7 @@ static std::string get_full_path(const char *filename)
     // Get the directory name and relative path to libvoglperf.so.
     // Original source would find this based on exe path, we want to load the lib
     // from a shared location instead.
-    std::string filedir = ("/usr/lib/")";
+    std::string filedir = ("/usr/lib/");
     filedir += filename;
 
     char fullpath[PATH_MAX];
