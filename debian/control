@@ -32,7 +32,9 @@ Package: voglperf
 Architecture: all 
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- curl 
+ curl,
+ libncurses5,
+ libncurses5:i386
 Description: voglperf 
  Benchmarking tool for Linux OpenGL games.
  Spews frame information every second.
