@@ -13,13 +13,13 @@ UNAME := $(shell uname -i)
 all: voglperfnative
 
 voglperfnative:
-	@mkdir -p build_$(UNAME); cd build_$(UNAME); cmake -DCMAKE_BUILD_TYPE=Release -Dvoglperf_BINARY_DIR=/usr/bin ../src; make
+	@mkdir -p build_$(UNAME); cd build_$(UNAME); cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_VERBOSE=true ../src; make
 
 voglperf64:
-	@mkdir -p build64; cd build64; cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_X64=True -Dvoglperf_BINARY_DIR=/usr/bin ../src; make
+	@mkdir -p build64; cd build64; cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_X64=True -DCMAKE_VERBOSE=true ../src; make
 
 voglperf32:
-	@mkdir -p build32; cd build32; cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_X64=False -Dvoglperf_BINARY_DIR=/usr/bin ../src; make
+	@mkdir -p build32; cd build32; cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_X64=False -DCMAKE_VERBOSE=true ../src; make
 
 clean:
 	@rm -rf build64
