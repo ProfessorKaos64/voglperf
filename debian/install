@@ -1,4 +1,4 @@
 bin/voglperfrun32       /usr/bin/
 bin/voglperfrun64       /usr/bin/
 lib/libvoglperf32.so    /usr/lib/
-lib/libvoglperf32.so    /usr/lib/
+lib/libvoglperf64.so    /usr/lib/
