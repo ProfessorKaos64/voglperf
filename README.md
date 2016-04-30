@@ -87,14 +87,23 @@ Connected to ws://172.16.10.93:8081/ws
 ```
 Gameid: ''  
     WS Connections: 1  
-    logfile: Off (Launch option)  
-    verbose: Off  
-    fpsspew: Off  
-    fpsshow: Off (Launch option)  
-    dry-run: Off (Launch option)  
-    ld-debug: Off (Launch option)  
-    xterm: Off (Launch option)  
-    debugger-pause: Off (Launch option)
+Commands:
+  game start [steamid | filename]: Start game.
+  game stop: Send SIGTERM signal to game.
+  game set (steamid | filename): Set gameid to launch.
+  game args: set game arguments.
+  logfile start [seconds]: Start capturing frame time data to filename.
+  logfile stop: Stop capturing frame time data.
+  status: Print status and options.
+  quit: Quit voglperfrun.
+  logfile [on | off]: Frame time logging on.
+  verbose [on | off]: Frame time logging on.
+  fpsprint [on | off]: Frame time logging on.
+  fpsshow [on | off]: Frame time logging on.
+  dry-run [on | off]: Frame time logging on.
+  ld-debug [on | off]: Frame time logging on.
+  xterm [on | off]: Frame time logging on.
+  debugger-pause [on | off]: Frame time logging on.
 ```
 
  - To launch TF2, do:
