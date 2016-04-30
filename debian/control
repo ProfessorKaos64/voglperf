@@ -33,6 +33,8 @@ Architecture: all
 Depends: ${shlibs:Depends},
  ${misc:Depends},
  curl,
+ libgl1-mesa-dev,
+ libgl1-mesa-dev:i386,
  libncurses5,
  libncurses5:i386
 Description: voglperf 
