@@ -314,7 +314,7 @@ static bool game_start_init_launch_cmd(voglperf_data_t &data)
     }
 
     // Set up LD_PRELOAD string.
-    std::string LD_PRELOAD = get_ld_preload_str("./libvoglperf32.so", "./libvoglperf64.so", !!(data.flags & F_LDDEBUGSPEW));
+    std::string LD_PRELOAD = get_ld_preload_str("/usr/lib/libvoglperf32.so", "/usr/lib/libvoglperf64.so", !!(data.flags & F_LDDEBUGSPEW));
     webby_ws_printf("\n%s\n", LD_PRELOAD.c_str());
 
     // set up VOGLPERF_CMD_LINE string
