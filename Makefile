@@ -24,7 +24,8 @@ voglperf32:
 clean:
 	@rm -rf build64
 	@rm -rf build32
-	@rm -rf bin/libvoglperf* bin/voglperfrun*
+	@rm -rf lib/libvoglperf* 
+	@rm -rf bin/voglperfrun*
 
 .PHONY: all voglperfnative voglperf32 voglperf64 clean
 
