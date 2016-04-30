@@ -1,3 +1,12 @@
+voglperf (0.3+git+bsos-1) brewmaster; urgency=low
+
+  * Fix run-time dep (libgl1-mesa-dev)
+  * In a future update, the dev package will be dropped
+  * In it's place, only required packages will be listed
+  * Sorting through libgl1-mesa-dev's package installs will take time
+
+ -- Michael DeGuzis  <mdeguzis@gmail.com>  Sat, 30 Apr 2016 11:48:32 -0400
+
 voglperf (0.2+git+bsos-1) brewmaster; urgency=low
 
   * Modify LD_PRELOAD to point to standard location
