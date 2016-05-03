@@ -12,7 +12,7 @@ Voglperf framerates from pid 12106.
 4059.60 fps frames:4060 time:1000.10ms min:0.23ms max:1.09ms
 ```
 
-Can also write frame times to a log file which can then be graphed with gnuplot, etc.
+It can also write frame times to a log file which can then be graphed with gnuplot, etc.
 
 ```
 cat /tmp/voglperf.glxspheres64.2014_02_12-16_02_20.csv:
@@ -42,10 +42,10 @@ If you are using SteamOS, setup your environment (if you have not already done s
  - Click **"Terminal"** icon.
  - Type **`passwd`** and enter a password.
 
-Ensure you have Debian sources added:
+Ensure you have Debian sources added (simple example below):
 
 ```
-echo "deb http://ftp.debian.org/debian wheezy main contrib non-free" | sudo tee -a /etc/apt/sources.list
+echo "deb http://ftp.debian.org/debian jessie main contrib non-free" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update
 ```
  
@@ -67,7 +67,7 @@ make voglperf32
 make voglperf64
 ```
 
-A debian package can be built using debuild/pdebuild. This will install the binaries to /usr/bin/ and the libraries to /usr/lib. A package can also be found via packages.libregeek.org. The [SteamOS tools](https://github.com/ProfessorKaos64/SteamOS-Tools) package will update with your system.
+A debian package can be built using debuild/pdebuild. This will install the binaries to /usr/bin/ and the libraries to /usr/lib/. A package can also be found via packages.libregeek.org. The [SteamOS tools](https://github.com/ProfessorKaos64/SteamOS-Tools) package will update with your system.
 
 # Running volglpef
 
