@@ -170,3 +170,10 @@ Output graph to blah.png:
 # License and Credits
 
 voglperf code is under the [MIT](http://opensource.org/licenses/MIT) License. The license file [Repository License](https://github.com/ValveSoftware/voglperf/blob/master/LICENSE) is stored within the repository.
+
+`src/eintr_wrapper.h`- Chromium Authors (2012); BSD-style License. [Current License] (https://chromium.googlesource.com/chromium/src.git/+/master/LICENSE)
+
+`src/webby/` - Andreas Fredriksson (2012); BSD-style License [Current License](https://github.com/ValveSoftware/voglperf/blob/master/src/webby/LICENSE); [Source Location](https://github.com/deplinenoise/webby)
+
+`src/libedit/` - Jess Thrysoee and NetBSD (2014); BSD-style License [Current License](http://www.netbsd.org/about/redistribution.html); [Source Location](http://thrysoee.dk/editline/)
+
