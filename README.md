@@ -135,17 +135,21 @@ debugger-pause [on | off]: Frame time logging on.
 
 ###  Logs
 
- - To capture logfile for 10 seconds, type:
+ To capture logfile for 10 seconds, type:
 
-  * `logfile start 10` ; 
+```
+logfile start 10
+```
 
- - Should see something like:
+You should see something like:
 
-  * ` Logfile started: /tmp/voglperf.Team-Fortress-2.2014_04_01-06_28_16.csv (10 seconds).`  
+```
 
-  * `Logfile stopped: http://172.16.10.93:8081/logfile/tmp/voglperf.Team-Fortress-2.2014_04_01-06_28_16.csv`
+Logfile started: /tmp/voglperf.Team-Fortress-2.2014_04_01-06_28_16.csv (10 seconds).
+Logfile stopped: http://172.16.10.93:8081/logfile/tmp/voglperf.Team-Fortress-2.2014_04_01-06_28_16.csv
+```
 
- - Right click on logfile link and say "Open in New Tab" (or whatever).
+Right click on logfile link and say "Open in New Tab" (or whatever).
  
 Display graph in gnuplot (install gnuplot-x11):
 
@@ -157,15 +161,13 @@ Output graph to blah.png:
 
 
 ### Notes
+
  - HTML needs to be cleaned up.
  - Occasionally web client will think two clients are connected and duplicated messages. (Needs to be tracked down.)
- - We are currently adding voglperf as a SteamOS package.
-
 
 # Example Screenshots
 
 ![Example screenshot](https://raw.github.com/ValveSoftware/voglperf/master/screenshot.png)
-
 
 # License and Credits
 
